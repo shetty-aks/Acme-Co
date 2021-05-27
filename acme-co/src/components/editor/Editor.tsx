@@ -1,52 +1,95 @@
-import React, { useEffect } from "react";
+import * as React from 'react';
 import styled from "styled-components";
-import UIButton from "../button/UIButton.tsx";
+import UIButton from "../button/UIButton";
 import hljs from "highlight.js";
 import javascript from "highlight.js/lib/languages/javascript";
+
 hljs.registerLanguage("javascript", javascript);
 
-const EditorWrapper = styled.div``;
+const EditorWrapper = styled.div`
+  width: 512px;
+  height: 360px;
+  margin-left: auto;
+  @media screen and (max-width: 900px) {
+    width: 420px;
+  }
 
-const TabContainer = styled.div``;
+  @media screen and (max-width: 650px) {
+    width: 85vw;
+  }
+`;
+
+const TabContainer = styled.div`
+  width: 100%;
+  background: linear-gradient(180deg, rgba(109, 114, 120, 0.24) -88.96%, #000000 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0px 1px 0px 1px rgba(255, 255, 255, 0.12);
+  position: relative;
+
+  @media screen and (max-width: 650px) {
+    button {
+      padding: 0 10px;
+    }
+  }
+`;
+
+const HorizontalLine = styled.hr`
+  position: absolute;
+  top: 52px;
+  left: 8px;
+  width: 90px;
+  height: 4px;
+  background-color: #0091FF;
+  border: none;
+`;
 
 const Editor = () => {
-  useEffect(() => {
-    hljs.initHighlighting();
-  }, []);
+    React.useEffect(() => {
+        hljs.initHighlighting();
+    }, []);
 
-  return (
-    <EditorWrapper>
-      <TabContainer>
-        <UIButton
-          text="Javascript"
-          backgroundColor="white"
-          height="48px"
-          width="max-content"
-          padding="0 20px"
-        ></UIButton>
-        <UIButton
-          text="GO"
-          backgroundColor="white"
-          height="48px"
-          width="max-content"
-          padding="0 20px"
-        ></UIButton>
-        <UIButton
-          text="Java"
-          backgroundColor="white"
-          height="48px"
-          width="max-content"
-          padding="0 20px"
-        ></UIButton>
-        <UIButton
-          text="Python"
-          backgroundColor="white"
-          height="48px"
-          width="1max-content"
-          padding="0 20px"
-        ></UIButton>
-      </TabContainer>
-      <pre>
+    return (
+        <EditorWrapper>
+            <TabContainer>
+                <UIButton
+                    text="Javascript"
+                    backgroundColor="transparent"
+                    height="56px"
+                    width="max-content"
+                    padding="0 20px"
+                    color="#FFFFFF"
+                    border="none"
+                ></UIButton>
+                <UIButton
+                    text="GO"
+                    backgroundColor="transparent"
+                    height="56px"
+                    width="max-content"
+                    padding="0 20px"
+                    color="#FFFFFF"
+                    border="none"
+                ></UIButton>
+                <UIButton
+                    text="Java"
+                    backgroundColor="transparent"
+                    height="56px"
+                    width="max-content"
+                    padding="0 20px"
+                    color="#FFFFFF"
+                    border="none"
+                ></UIButton>
+                <UIButton
+                    text="Python"
+                    backgroundColor="transparent"
+                    height="56px"
+                    width="max-content"
+                    padding="0 20px"
+                    color="#FFFFFF"
+                    border="none"
+                ></UIButton>
+                <HorizontalLine/>
+            </TabContainer>
+            <pre>
         <code className="js">
           {`class NewGame {
             constructor(settings = {id: '', pinned: false}) {
@@ -65,8 +108,8 @@ const Editor = () => {
           }`}
         </code>
       </pre>
-    </EditorWrapper>
-  );
+        </EditorWrapper>
+    );
 };
 
 export default Editor;

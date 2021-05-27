@@ -1,12 +1,11 @@
-import React, { ReactNode } from "react";
-import { createGlobalStyle } from "styled-components";
+import * as React from 'react';
+import {createGlobalStyle} from "styled-components";
 
 type BasicLayoutProps = {
-  children: ReactNode;
-  color: string;
+    children: React.ReactNode;
 };
 
-export const GlobalStyle = createGlobalStyle<BasicLayoutProps>`
+const GlobalStyle = createGlobalStyle<BasicLayoutProps>`
   * {
     box-sizing: border-box;
     padding: 0;
@@ -14,15 +13,19 @@ export const GlobalStyle = createGlobalStyle<BasicLayoutProps>`
     color: #787D84;
     margin: 0;
   }
+
+  html {
+    font-size: 100%;
+  }
 `;
 
-const BasicLayout = ({ children }: { BasicLayoutProps }) => {
-  return (
-    <>
-      <GlobalStyle />
-      {children}
-    </>
-  );
+const BasicLayout: React.FunctionComponent<BasicLayoutProps> = ({children}) => {
+    return (
+        <>
+            <GlobalStyle/>
+            {children}
+        </>
+    );
 };
 
 export default BasicLayout;

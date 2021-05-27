@@ -6,9 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "jsxFactory": "h",
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,12 +17,18 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "strict": false
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "_tests_/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/**/*.ts",
+    "src/**/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
