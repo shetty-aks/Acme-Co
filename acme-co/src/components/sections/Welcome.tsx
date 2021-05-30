@@ -11,27 +11,29 @@ const ImageWrapper = styled.div`
 `;
 
 const Welcome = () => {
-  return (
-    <SectionWrapper>
-      <CTABanner title="SPRING IS HERE" buttonTitle ="Explore Products" textColor="#787D84" buttonTextColor="#787D84">
-        <p>We’ve updated out lineup of products for spring. Checkout the lastest discounts and specials available until 4/20/20. </p>
-      </CTABanner>
-      <ImageWrapper>
-        <Image
-          src="/assets/iphone-front.png"
-          alt="iphone front"
-          width={250}
-          height={400}
-        />
-        <Image
-          src="/assets/iphone-back.png"
-          alt="iphone back"
-          width={250}
-          height={400}
-        />
-      </ImageWrapper>
-    </SectionWrapper>
-  );
+    return (
+        <SectionWrapper>
+            <CTABanner title="SPRING IS HERE" buttonTitle="Explore Products" textColor="#787D84"
+                       buttonTextColor="#787D84">
+                <p>We’ve updated out lineup of products for spring. Checkout the lastest discounts and specials
+                    available until 4/20/20. </p>
+            </CTABanner>
+            <ImageWrapper>
+                <Image
+                    src="/assets/iphone-front.png"
+                    alt="iphone front"
+                    width={250}
+                    height={400}
+                />
+                <Image
+                    src="/assets/iphone-back.png"
+                    alt="iphone back"
+                    width={250}
+                    height={400}
+                />
+            </ImageWrapper>
+        </SectionWrapper>
+    );
 };
 
 export default Welcome;

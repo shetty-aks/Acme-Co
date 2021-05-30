@@ -10,27 +10,27 @@ const ImageWrapper = styled.div`
 `;
 
 const ExploreSDK = () => {
-  return (
-    <SectionWrapper>
-      <CTABanner
-        title="Ready to Build?"
-        buttonTitle="Expore the SDK"
-        textColor="#787D84"
-        buttonTextColor="#787D84"
-      >
-        <p>
-          Download our Developer SDK and begin creating experiencs of your own.
-        </p>
-        <p>
-          Our platforms supports Development in JAVA, Go, Javascript, and
-          Python.
-        </p>
-      </CTABanner>
-      <ImageWrapper>
-        <Editor />
-      </ImageWrapper>
-    </SectionWrapper>
-  );
+    return (
+        <SectionWrapper>
+            <CTABanner
+                title="Ready to Build?"
+                buttonTitle="Expore the SDK"
+                textColor="#787D84"
+                buttonTextColor="#787D84"
+            >
+                <p>
+                    Download our Developer SDK and begin creating experiencs of your own.
+                </p>
+                <p>
+                    Our platforms supports Development in JAVA, Go, Javascript, and
+                    Python.
+                </p>
+            </CTABanner>
+            <ImageWrapper>
+                <Editor/>
+            </ImageWrapper>
+        </SectionWrapper>
+    );
 };
 
 export default ExploreSDK;

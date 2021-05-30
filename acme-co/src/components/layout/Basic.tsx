@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import { createGlobalStyle } from "styled-components";
+import React, {ReactNode} from "react";
+import {createGlobalStyle} from "styled-components";
 
 type BasicLayoutProps = {
   children: ReactNode;

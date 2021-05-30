@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import BasicLayout from '../components/layout/Basic';
 import Navbar from '../components/navbar/Navbar';
 import Welcome from '../components/sections/Welcome';
@@ -9,14 +7,14 @@ import ExploreSDK from '../components/sections/ExploreSDK';
 import Footer from '../components/footer/Footer';
 
 export default function Home() {
-  return (
-    <BasicLayout>
-        <Navbar/>
-        <Welcome/>
-        <LearnMore/>
-        <Testimonials/>
-        <ExploreSDK/>
-        <Footer/>
-    </BasicLayout>
-  )
+    return (
+        <BasicLayout>
+            <Navbar/>
+            <Welcome/>
+            <LearnMore/>
+            <Testimonials/>
+            <ExploreSDK/>
+            <Footer/>
+        </BasicLayout>
+    )
 }
