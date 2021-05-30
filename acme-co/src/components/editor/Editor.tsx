@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from "styled-components";
-import UIButton from "../button/UIButton";
+import StyledButton from "../button/StyledButton";
 import hljs from "highlight.js";
 import javascript from "highlight.js/lib/languages/javascript";
 
@@ -51,7 +51,7 @@ const Editor = () => {
     return (
         <EditorWrapper>
             <TabContainer>
-                <UIButton
+                <StyledButton
                     text="Javascript"
                     backgroundColor="transparent"
                     height="56px"
@@ -59,8 +59,8 @@ const Editor = () => {
                     padding="0 20px"
                     color="#FFFFFF"
                     border="none"
-                ></UIButton>
-                <UIButton
+                ></StyledButton>
+                <StyledButton
                     text="GO"
                     backgroundColor="transparent"
                     height="56px"
@@ -68,8 +68,8 @@ const Editor = () => {
                     padding="0 20px"
                     color="#FFFFFF"
                     border="none"
-                ></UIButton>
-                <UIButton
+                ></StyledButton>
+                <StyledButton
                     text="Java"
                     backgroundColor="transparent"
                     height="56px"
@@ -77,8 +77,8 @@ const Editor = () => {
                     padding="0 20px"
                     color="#FFFFFF"
                     border="none"
-                ></UIButton>
-                <UIButton
+                ></StyledButton>
+                <StyledButton
                     text="Python"
                     backgroundColor="transparent"
                     height="56px"
@@ -86,7 +86,7 @@ const Editor = () => {
                     padding="0 20px"
                     color="#FFFFFF"
                     border="none"
-                ></UIButton>
+                ></StyledButton>
                 <HorizontalLine/>
             </TabContainer>
             <pre>

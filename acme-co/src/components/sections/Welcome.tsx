@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from "styled-components";
 import SectionWrapper from "../layout/SectionWrapper";
 import CTABanner from "../cta/CTABanner";
-import UIButton from "../button/UIButton";
+import StyledButton from "../button/StyledButton";
 
 //temp padding to keep image to the bottom of the section
 const ImageWrapper = styled.div`
@@ -69,7 +69,7 @@ const Welcome = () => {
                     discounts and specials available until 4/20/20.{" "}
                 </p>
             </CTABanner>
-            <UIButton
+            <StyledButton
                 text="Explore Products"
                 backgroundColor="linear-gradient(177.31deg, #32C5FF -71.22%, #7275F0 81.97%, #B620E0 246.67%)"
                 height="48px"

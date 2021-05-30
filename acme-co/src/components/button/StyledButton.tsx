@@ -28,7 +28,7 @@ const Button = styled.button<ButtonProps>`
   cursor: pointer;
 `;
 
-const UIButton = (props: ButtonProps) => {
+const StyledButton = (props: ButtonProps) => {
     return (
         <Button
             backgroundColor={props.backgroundColor}
@@ -45,4 +45,4 @@ const UIButton = (props: ButtonProps) => {
     );
 };
 
-export default UIButton;
+export default StyledButton;

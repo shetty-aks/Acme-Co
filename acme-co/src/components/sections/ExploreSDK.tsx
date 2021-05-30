@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SectionWrapper from "../layout/SectionWrapper";
 import CTABanner from "../cta/CTABanner";
 import Editor from "../editor/Editor";
-import UIButton from "../button/UIButton";
+import StyledButton from "../button/StyledButton";
 
 const ImageWrapper = styled.div`
   flex: 3;
@@ -28,7 +28,7 @@ const ExploreSDK = () => {
                     Python.
                 </p>
             </CTABanner>
-            <UIButton
+            <StyledButton
                 text="Expore the SDK"
                 backgroundColor="linear-gradient(180deg, #313539 0%, #000000 100%)"
                 height="48px"

@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from "styled-components";
 import Link from "next/link";
 import {useRouter} from "next/router";
-import UIButton from "../button/UIButton";
+import StyledButton from "../button/StyledButton";
 import Image from "next/image";
 
 const NavWrapper = styled.nav`
@@ -266,14 +266,14 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <UIButton
+                    <StyledButton
                         text="login"
                         backgroundColor="white"
                         color="#32C5FF"
                         border="2px solid #32C5FF"
                         height="48px"
                         width="104px"
-                    ></UIButton>
+                    ></StyledButton>
                 </li>
             </>
         );

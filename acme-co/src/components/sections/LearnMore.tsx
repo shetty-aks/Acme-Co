@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from "styled-components";
 import SectionWrapper from "../layout/SectionWrapper";
 import CTABanner from "../cta/CTABanner";
-import UIButton from "../button/UIButton";
+import StyledButton from "../button/StyledButton";
 
 //temp padding to keep image to the bottom of the section
 const ImageWrapper = styled.div`
@@ -59,7 +59,7 @@ const LearnMore = () => {
                     over 10,000 movies and shows to choose from.
                 </p>
             </CTABanner>
-            <UIButton
+            <StyledButton
                 order={3}
                 text="Learn More"
                 backgroundColor="linear-gradient(180deg, #FFFFFF 0%, #D8D8D8 113.83%)"
